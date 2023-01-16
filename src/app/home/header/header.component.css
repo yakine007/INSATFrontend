@@ -1,0 +1,47 @@
+
+header{
+  background-color: #06283D;
+  height:80px;
+  color: white;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  font-size: 1rem;
+  position: sticky;
+  padding-left: 50px;
+  padding-right: 74px;
+  top:0px;
+  z-index: 1000;
+  opacity: 0.97;
+
+
+}
+
+header .nav-bar ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+header a{
+  text-decoration: none;
+  color: #F3E9DD;
+  font-size: bold;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 0px 0px 15px;
+  font-size: 12px;
+}
+header .logo{
+  font-size: 24px;
+  color: #F3E9DD;
+  border: 1px solid #F3E9DD ;
+  letter-spacing: 0.5em;
+  padding: 7px;
+  border-radius: 0;
+  text-indent: 0.4em;
+  margin-left: -719px;
+}
+
+

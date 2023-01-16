@@ -1,0 +1,52 @@
+<div class="main">
+  <app-world-map></app-world-map>
+   <div class="slogan">
+    <div class="container">
+      <h1 class="black">
+        With us
+        <br>
+        Predict the market
+      </h1>
+      <h2>The best way to create your FUTURE is to PREDICT it </h2>
+    </div>
+   </div>
+
+</div>
+<div class="main-down" id="about">
+
+  <div class="title-about">
+   <p class="tn">
+   Discover us
+   </p>
+   <br>
+   <p class="tn1">
+     Forcastify empowers your prediction and helps you make decisions.
+   </p>
+  </div>
+
+  <div class="about tn2">
+    <p>Our site web is here to help you predict campanies stock prices in the future.
+  Also, it provides data visualisations so that you can easily analyse the stock performance and make the decision.
+  With a qualified and certified team, we aim to create a safer market for our customers to prevent making the bad decisions and losing theirs money.</p>
+  </div>
+
+</div>
+<div class="title-services" id="services">
+  <p class="tn pn">
+    our services
+  </p>
+
+</div>
+  <div class="page-content">
+    <div class="card"  *ngFor="let service of services">
+      <div class="content">
+        <h2 class="title">{{service.title}}</h2>
+        <p class="copy">{{service.description}}</p>
+      </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+
