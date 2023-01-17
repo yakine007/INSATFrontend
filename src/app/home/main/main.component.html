@@ -1,52 +1,102 @@
 <div class="main">
-  <app-world-map></app-world-map>
+<app-world-map></app-world-map>
    <div class="slogan">
     <div class="container">
       <h1 class="black">
-        With us
-        <br>
-        Predict the market
+        In this land we dream
       </h1>
-      <h2>The best way to create your FUTURE is to PREDICT it </h2>
+      <h2>Don’t let what you cannot do interfere with what you can do. </h2>
     </div>
    </div>
+   <div class="main-down" id="about">
 
-</div>
-<div class="main-down" id="about">
+    <div class="title-about">
+     <p class="tn">
+     Discover us
+     </p>
+     <br>
+     <p class="tn1">
 
-  <div class="title-about">
-   <p class="tn">
-   Discover us
-   </p>
-   <br>
-   <p class="tn1">
-     Forcastify empowers your prediction and helps you make decisions.
-   </p>
-  </div>
-
-  <div class="about tn2">
-    <p>Our site web is here to help you predict campanies stock prices in the future.
-  Also, it provides data visualisations so that you can easily analyse the stock performance and make the decision.
-  With a qualified and certified team, we aim to create a safer market for our customers to prevent making the bad decisions and losing theirs money.</p>
-  </div>
-
-</div>
-<div class="title-services" id="services">
-  <p class="tn pn">
-    our services
-  </p>
-
-</div>
-  <div class="page-content">
-    <div class="card"  *ngFor="let service of services">
-      <div class="content">
-        <h2 class="title">{{service.title}}</h2>
-        <p class="copy">{{service.description}}</p>
-      </div>
+      we welcome you to a benchmark school that trains competent and responsabla engineers.
     </div>
+
+    <div class="about tn2">
+      <p>
+        As part of a vision of the future,
+        INSAT is actively engaged in a process of continuous improvement by setting up a quality management system in line with the expectations of the CTI.
+         In parallel with the training, INSAT allows its engineering students to have a rich and dynamic club life,
+        thanks to the many activities offered in collaboration with the direction of university life and relations with the environment.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="cards" id="cards">
+    <section class="card card-one">
+      <div class="top">
+        <div class="date">02/11/2021</div>
+        <div *ngIf="showActionStudent" class="actions">
+          <button pButton type="button" style="margin-right: 8px;"
+          icon="pi pi-heart">
+          </button>
+          <button pButton type="button" style="margin-right: 8px;"
+          icon="pi pi-thumbs-down">
+          </button>
+          <button pButton type="button"
+          icon="pi pi-comment">
+          </button>
+        </div>
+      </div>
+      <div class="bottom">
+        <h1>Best Gardening Ideas in 2022</h1>
+        <div class="text">
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consecte, adipisci...</p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card card-two">
+      <div class="top">
+        <div class="date">1 Aug 2022</div>
+        <div class="actions">
+          <button pButton type="button" style="margin-right: 8px;"
+          icon="pi pi-heart">
+          </button>
+          <button pButton type="button" style="margin-right: 8px;"
+          icon="pi pi-thumbs-down">
+          </button>
+          <button pButton type="button"
+          icon="pi pi-comment">
+          </button>
+
+        </div>
+      </div>
+      <div class="bottom">
+        <h1>My Happy Memory at the Beach</h1>
+        <div class="text">
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consecte, adipisci...</p>
+          <button (click)="showDialog()">Read More</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <p-dialog [(visible)]="display" [style]="{width: '50vw'}">
+    <ng-template pTemplate="header">
+        Header content here
+    </ng-template>
+    Content
+    <ng-template pTemplate="footer">
+      <p-button label="OK" icon="pi pi-check" iconPos="left" (onClick)="closeDialog()"></p-button>
+    </ng-template>
+</p-dialog>
 </div>
 
-<app-footer></app-footer>
+
+
+
+
+<!-- <app-footer></app-footer> -->
 
 
 

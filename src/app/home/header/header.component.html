@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
 
   <div class="logoImage">
     <img src="/assets/images/insatLogo.png" style="width:50px"/>
@@ -25,4 +25,31 @@
       <li><a href="signin">COMPTE</a></li>
     </ul>
   </div>
-</header>
+</header> -->
+<header>
+  <div class="container">
+    <div class="d-flex justify-content-between aling-items-center">
+      <img src="/assets/images/insatLogo.png" style="width: 82px;"/>
+
+      <!-- menu -->
+      <nav>
+        <ul class="d-flex ">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#cards">News</a></li>
+          <li><a href="http://www.insat.rnu.tn/upload/1325088497.pdf" target="_blank">Cursus </a></li>
+          <li ><a href="profile/contactus">Contact</a></li>
+          <li *ngIf="studentActionService.showActions"><a href="profile/contactus">Timetable</a></li>
+          <li *ngIf="studentActionService.showActions"><a href="profile/contactus">Classes</a></li>
+          <li *ngIf="studentActionService.showActions"><a href="profile/contactus">Deliberation</a></li>
+
+
+        </ul>
+      </nav>
+      <!-- button -->
+      <a *ngIf="studentActionService.showSignInUp" href="signin" class="button" ><i class="pi pi-sign-in"></i></a>
+      <a *ngIf="studentActionService.showActions" href="profile" class="button"><i class="pi pi-user"></i></a>
+      <a *ngIf="studentActionService.showActions" href="signin" class="button"><i class="pi pi-sign-out"></i></a>
+    </div>
+  </div>
+  </header>

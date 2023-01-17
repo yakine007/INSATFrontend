@@ -10,6 +10,16 @@ import { Service } from '../models/service';
 export class MainComponent implements OnInit {
 
   services: Service[]=[]
+  display: boolean = false;
+  showActionStudent: boolean =true;
+
+
+  showDialog() {
+      this.display = true;
+  }
+  closeDialog(){
+    this.display= false;
+  }
 
   constructor(private cardService : CardService) { }
 

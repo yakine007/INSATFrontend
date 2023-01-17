@@ -14,6 +14,10 @@ import { ContacusComponent } from './home/contacus/contacus.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MenubarModule} from 'primeng/menubar';
+import {DialogModule} from 'primeng/dialog';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+import { ProfileComponent } from './home/profile/profile.component';
 
 
 
@@ -28,6 +32,8 @@ import {MenubarModule} from 'primeng/menubar';
     SigninComponent,
     WorldMapComponent,
     ContacusComponent,
+    ProfileComponent
+
   ],
   imports: [
     BrowserModule,
@@ -37,6 +43,9 @@ import {MenubarModule} from 'primeng/menubar';
     FormsModule,
     ReactiveFormsModule,
     MenubarModule,
+    DialogModule,
+    MessageModule,
+    MessagesModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],

@@ -73,7 +73,14 @@ input {
 	margin: 8px 0;
 	width: 100%;
 }
+img{
+  width: 183px;
+    padding: 10px;
+}
+.nameAvatar{
+    padding-left: 64px;
 
+}
 .container {
 	background-color: #fff;
 	border-radius: 10px;
@@ -87,6 +94,7 @@ input {
   z-index: 100;
   top: 160px;
   left: 318px;
+  display: flex;
 }
 
 .form-container {
@@ -219,6 +227,3 @@ input {
 	height: 40px;
 	width: 40px;
 }
-
-
-

@@ -1,8 +1,13 @@
 export class Person {
   id: number;
-  Name: string;
-  Email: string;
-  Password: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  cin:number;
+  filiere:string;
+  niveau:number;
+
 
 
 }

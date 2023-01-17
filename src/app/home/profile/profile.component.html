@@ -1,0 +1,51 @@
+<div class="main">
+  <app-world-map></app-world-map>
+<div  class="container" id="container">
+  <div class="avatar" >
+    <img src="/assets/images/avatar.png" alt="Avatar">
+    <div class="nameAvatar">
+  test1
+</div>
+  </div>
+
+  <div class="user-info">
+    <form action="#">
+      <h1>Profile</h1>
+      <span class="title">Manage your account</span>
+      <div  style="display: grid; grid-template-columns: 1fr 1fr;grid-column-gap: 20px;">
+        <input type="text" placeholder="FirstName" />
+        <input type="text" placeholder="LastName" />
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr;grid-column-gap: 20px;">
+        <input style="pointer-events: none; color: #06283D;" type="email" value="test@insat.ucar.tn" readonly/>
+        <input style="pointer-events: none; color: #06283D;" type="text" value="11111111" readonly/>
+      </div>
+
+      <input type="password" placeholder="Password" style="width: 101%;"/>
+      <div style="display: grid; grid-template-columns: 1fr 1fr;grid-column-gap: 20px;">
+        <select class="filiere">
+          <option value="option1"selected>MPI</option>
+          <option value="option2">CBA</option>
+          <option value="option3">RT</option>
+          <option value="option3">GL</option>
+          <option value="option3">IIA</option>
+          <option value="option3">IMI</option>
+        </select>
+        <select class="filiere">
+          <option value="option1"selected>1</option>
+          <option value="option2">2</option>
+          <option value="option3">3</option>
+          <option value="option3">4</option>
+          <option value="option3">5</option>
+
+        </select>
+      </div>
+
+      <br><br>
+      <button>Update your Profile</button>
+    </form>
+  </div>
+
+
+</div>
+</div>
